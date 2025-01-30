@@ -1,5 +1,140 @@
-/* Attribution styling */
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Manrope:wght@200..800&display=swap");
 
+/* Basic styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-Dark-Grayish-blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  background: var(--Light-Grayish-Blue);
+}
+
+img {
+  height: 100%;
+  border: none;
+  max-width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+
+.image-container img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.text-container {
+  background-color: white;
+}
+
+.text-container h2 {
+  color: var(--Very-Dark-Grayish-blue);
+  font-size: 1.1rem;
+  margin: 30px auto;
+  margin-bottom: 0;
+  width: 85%;
+}
+
+.text-container p {
+  color: var(--Grayish-Blue);
+  font-size: 0.95rem;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 85%;
+}
+
+.social-container img {
+  border-radius: 100%;
+  width: 15%;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+}
+
+.names h3 {
+  color: var(--Very-Dark-Grayish-blue);
+  margin: 0;
+}
+
+.names p {
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
+}
+
+.share {
+}
+
+.social-icons {
+  background: var(--Very-Dark-Grayish-blue);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  padding: 10px 10px;
+  top: -30px;
+  right: 20px;
+  width: 120%;
+  z-index: 1;
+}
+
+.social-icons p {
+  font-size: 1rem;
+  margin: 0;
+}
+/* 
+.hidden {
+  display: none;
+} */
+
+/* Attribution styling */
 .attribution {
   font-size: 11px;
   text-align: center;
